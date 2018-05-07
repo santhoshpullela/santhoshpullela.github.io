@@ -1,1 +1,0 @@
-# santhoshpullela.github.io
