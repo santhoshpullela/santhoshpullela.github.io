@@ -44,13 +44,15 @@ footer{
 }
 
 .text{
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
+    font-style:italic;
 }
 
 .text2{
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
+    font-style:italic;
 }
 
 .column_names{
