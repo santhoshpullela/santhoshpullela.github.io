@@ -4,107 +4,122 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body{background-color: aqua}
-        </style>                  
-        <title>TheVulcanSalute</title>
+        <title>Roster Mapping - Knowledge Reference</title>
 
-        <!-- Javascripts to be imported -->
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="assets.css" type="text/css">
         
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://d3js.org/d3.v3.min.js"></script>
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script src="https:/unpkg.com/d3-3d/build/d3-3d.js"></script>
-
-        <!-- <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../static/assets.css" type="text/css">
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     </head>
 
-   
     <body>
-        <div class="panel panel-warning">
-            <div class="panel-heading">
-                <center><h2>Life Expectancy Predictions using Linear Regression and LSTM Neural Networks</h2></center>
-            </div>   
-        </div>   
-        <div class="container-fluid">             
-            
-            <h4>Linear Regression model</h4>       
-            <div class ='row'>              
-                <div class = 'col-md-5'>
-                    <img src="images/BMI_LifeExpect.png">                    
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-default" style="background:lightgoldenrodyellow">
+        <div class="container-fluid">
+                <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-1"></div>
+                        <a class="navbar-brand" href="index.html" style="color:whitesmoke; background-color:rgba(40, 28, 151, 0.781);">
+                            <span class="nav-color">Roster Mapping System</span>
+                        </a>
                 </div>
-                <div class= "col-md-2"></div>
-                <div class= "col-md-4">
-                        <ul><i>
-                           <li> Healthy Life Expectancy is observed around 23 to 27 (kg-m) with BMI and Year Linear Regression model</li>
-                           <li >Mean Squared Error : 0.00827203 </li>
-                           <li> R2 Value: 0.986899 </li>
-                           <li> Used YEAR_model (an Linear Regression Model) to predict the life expectancy of future years based on BMI and Adult Mortality factors </li>
-                           <li> Y-Intercept and Weights Coefficient for this model is : y = -464.42092776+0.2713566x </li> 
-                        </i></ul>
-                        <center><button type="button" class="btn btn-info">
-                                <a href="predicted years.csv">
-                                        <span class="glyphicon glyphicon-download-alt"></span> Download predicted file(.csv)
 
-                                </a>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Topics <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="max_temp.html">File Processing Types</a></li>
+                                    <li><a href="humidity.html">File Layouts and OPS Data Mapping</a></li>
+                                    <li><a href="cloudiness.html">OMNI Plan Service Flags - PL634</a></li>
+                                    <li><a href="wind_speed.html">OMNI Transactions and Participant History</a></li>
+                                    <li><a href="wind_speed.html">AFT Stages and Roster Mapping Cycle Timings</a></li>
+                                    <li><a href="wind_speed.html">Production - Types of Errors</a></li>
+                                </ul>
+                        </li>
+                        <!-- <li><a href="comparisons.html">Comparisons</a></li> -->
+                        <li><a href="data.html">Data</a></li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+            <div class="row">
+                <!-- div class="col-md-1"></div -->
+                <div class="col-md-7">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h2>Roster Mapping Process</h2>
+                            <hr>
+                            <!-- <img src="Latitude_vs_Temp.png" alt="max temp" style="width:55%; float: left; margin:5px;"> -->
+                            <p class="text">Roster Mapping process is divided into two job streams Roster Mapping-1 (RM1) and Roster Mapping-2(RM2) 
+                                with the intention that the contribution related infroamtion to be processed first and all the necessary information of a 
+                                participant to be processed at a later time, resulting in reduction of processing time.
+                                <br>
                                 
-                        </button></center>
-                </div>  
-            </div>  
-            <br>
-            <div class = "row">
-                <div class = 'col-md-8'>
-                    <img src="images/Years_LE.png">                    
-                </div> 
-            </div>  
-            <br>
-            <!-- <div class ='row'>              
-                    <div class = 'col-md-5'>
-                        <img src="../images/BMI_LifeExpect.png">                    
+                                
+                            </p>
+                        </div>
                     </div>
-                    <div class= "col-md-2"></div>
-                    <div class= "col-md-4">
-                            <ul><i>
-                               <li> Healthy Life Expectancy is observed around 23 to 27 (kg-m) with BMI and Year Linear Regression model</li>
-                               <li >Mean Squared Error : 0.00827203 </li>
-                               <li> R2 Value: 0.986899 </li>
-                               <li> Used YEAR_model (an Linear Regression Model) to predict the life expectancy of future years based on BMI and Adult Mortality factors </li>
-                               <li> Y-Intercept and Weights Coefficient for this model is : y = -464.42092776+0.2713566x </li> 
-                            </i></ul>
-                            <center><button type="button" class="btn btn-info">
-                                    <a href="../predicted years.csv">
-                                            <span class="glyphicon glyphicon-download-alt"></span> Download predicted file(.csv)
-    
+                </div>
+                <div class="col-md-5">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h2>Visualizations</h2>
+                            <hr>
+                            <div class="row" style="padding-bottom:5px">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <a href="max_temp.html">
+                                        <img src="Latitude_vs_Temp.png" alt="" style="width:100%">
                                     </a>
-                                    
-                            </button></center>
-                    </div>  
-            </div>   -->
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <a href="humidity.html">
+                                        <img src="Latitude_vs_Humidity.png" alt="" style="width:100%">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <a href="cloudiness.html">
+                                        <img src="Latitude_vs_Cloudiness.png" alt="" style="width:100%">
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <a href="wind_speed.html">
+                                        <img src="Latitude_vs_WindSpeed.png" alt="" style="width:100%">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             
                 
+            </div>
+    
+            
+        </div>
+        </div>
+    
+    </div>
+    
 
-                
-        </div>    
+<footer>
 
-        
-        
-        
-        
-        
-    
-    <div class = "container-fluid">
-        <footer>
-            <p> UNCC BootCamp - TheVulcanSalute Application</p>
-        </footer>
-    </div>      
-    
-    </body>
-    
+<p> @ UNCC Boot Camp - Web Visualization</p>
+</footer>      
+</body>
 </html>
